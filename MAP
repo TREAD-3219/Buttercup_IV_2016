@@ -9,3 +9,4 @@ ex: Seventh wheel	CANTalon		7				(NOT REAL MOTOR)
 
 BUTTON NUMBER		BUTTON FUNCTION		COMMAND NAME
 ex: joystick 2		drives 20ft			DriveMeThatWay (NOT REAL COMMAND)
+controller			Drives				Robotdrive
