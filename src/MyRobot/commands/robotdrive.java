@@ -1,33 +1,33 @@
 package MyRobot.commands;
 
-import MyRobot.Robot;
+import MyRobot.subsystems.Drive;
 import edu.wpi.first.wpilibj.command.Command;
 
-public class robotdrive extends Command{
+public class robotdrive extends Command {
 
 	@Override
 	protected void end() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	protected void execute() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	protected void initialize() {
 		// TODO Auto-generated method stub
-	Robot.drive.driveforwardtwo();
-    this.setTimeout(10);
+		Drive.driveforwardtwo();
+		this.setTimeout(10);
 	}
-	
-	@Override 
+
+	@Override
 	protected void interrupted() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
