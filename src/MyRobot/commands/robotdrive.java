@@ -9,7 +9,7 @@ import edu.wpi.first.wpilibj.command.Subsystem;
 
 public class robotdrive extends Command {
 
-	Joystick robotDrive = Robot.OI.equals(anObject);
+	Joystick robotDrive = Robot.oi.LeftStick;
 
 	public robotdrive() {
 		requires((Subsystem) Robot.drive);
@@ -18,7 +18,7 @@ public class robotdrive extends Command {
 	@Override
 	protected void end() {
 		// TODO Auto-generated method stub
-		((Object) Robot.drive).stopMotors();
+		Robot.drive.stopMotors();
 	}
 
 	@Override
@@ -46,7 +46,7 @@ public class robotdrive extends Command {
 	protected boolean isFinished() {
 		// TODO Auto-generated method stub
 		return this.isTimedOut();
-        return false
+        return false;
 	}
 
 }
