@@ -10,7 +10,7 @@
 
 package MyRobot;
 
-import MyRobot.commands.*;
+import MyRobot.commands.AutonomousCommand;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;

@@ -12,7 +12,7 @@ public class robotdrive extends Command {
 	Joystick robotDrive = Robot.oi.LeftStick;
 
 	public robotdrive() {
-		requires((Subsystem) Robot.drive);
+		requires(Robot.drive);
 	}
 
 	@Override
@@ -26,7 +26,7 @@ public class robotdrive extends Command {
 		// TODO Auto-generated method stub
 		// Robot.drive.stickDrive(driveStick.getY(), driveStick.getX(),
 		// -driveStick.getThrottle());
-		Robot.drive.tankDrive(-Robot.OI.leftStick.getY(), -Robot.OI.rightStick.getY());
+		Robot.drive.tankDrive(-Robot.oi.leftStick.getY(), -Robot.oi.rightStick.getY());
 	}
 
 	@Override
