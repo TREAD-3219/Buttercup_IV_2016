@@ -11,7 +11,7 @@ public class robotdrive extends Command {
 
 	Joystick robotDrive = Robot.oi.LeftStick;
 
-	public robotdrive() {
+	public void robotDrive() {
 		requires(Robot.drive);
 	}
 
@@ -46,7 +46,7 @@ public class robotdrive extends Command {
 	protected boolean isFinished() {
 		// TODO Auto-generated method stub
 		return this.isTimedOut();
-        return false;
+		return false;
 	}
 
 }
