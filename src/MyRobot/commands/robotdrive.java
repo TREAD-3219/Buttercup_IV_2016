@@ -46,7 +46,6 @@ public class robotdrive extends Command {
 	protected boolean isFinished() {
 		// TODO Auto-generated method stub
 		return this.isTimedOut();
-		return false;
 	}
 
 }
