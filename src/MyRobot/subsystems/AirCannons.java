@@ -10,7 +10,7 @@
 
 
 package MyRobot.subsystems;
-
+public class Shooter extends Subsystem;
 import MyRobot.RobotMap;
 import MyRobot.commands.*;
 import edu.wpi.first.wpilibj.command.Subsystem;
