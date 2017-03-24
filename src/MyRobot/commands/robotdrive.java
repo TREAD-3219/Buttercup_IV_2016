@@ -2,7 +2,9 @@ package MyRobot.commands;
 
 import org.usfirst.frc3219.TREAD.Robot;
 
+import MyRobot.OI1;
 import MyRobot.subsystems.Drive;
+import edu.wpi.first.wpilibj.GenericHID;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Subsystem;
@@ -26,7 +28,7 @@ public class robotdrive extends Command {
 		// TODO Auto-generated method stub
 		// Robot.drive.stickDrive(driveStick.getY(), driveStick.getX(),
 		// -driveStick.getThrottle());
-		Robot.drive.tankDrive(-Robot.oi.leftStick.getY(), -Robot.oi.rightStick.getY());
+		Robot.drive.tankDrive(-Robot.oi.leftStick.getY(), -((OI1) Robot.oi.rightStick).getY());
 	}
 
 	@Override

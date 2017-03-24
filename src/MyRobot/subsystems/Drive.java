@@ -52,4 +52,9 @@ public class Drive extends Subsystem {
 		// TODO Auto-generated method stub
 
 	}
+
+	public void tankDrive(int i, int j) {
+		// TODO Auto-generated method stub
+		
+	}
 }
