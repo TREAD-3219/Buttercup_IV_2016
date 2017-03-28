@@ -40,16 +40,12 @@ public class OI1 {
 	// until it is finished as determined by it's isFinished method.
 	// button.whenPressed(new ExampleCommand());
 
-	public Joystick leftStick;
-	public Joystick rightStick;
 	public Joystick Gamecontroller;
 
 	public OI1() {
 		{
 			// joystick initialization
-			leftStick = new Joystick(0);
-			rightStick = new Joystick(1);
-			Gamecontroller = new Joystick(2);
+			Gamecontroller = new Joystick(1);
 			{
 
 			}

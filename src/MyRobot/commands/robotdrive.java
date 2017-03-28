@@ -11,7 +11,7 @@ import edu.wpi.first.wpilibj.command.Subsystem;
 
 public class robotdrive extends Command {
 
-	Joystick robotDrive = Robot.oi.LeftStick;
+	Joystick robotDrive = (Joystick) Robot.oi.Gamecontroller;
 
 	public void robotDrive() {
 		requires(Robot.drive);
@@ -28,14 +28,14 @@ public class robotdrive extends Command {
 		// TODO Auto-generated method stub
 		// Robot.drive.stickDrive(driveStick.getY(), driveStick.getX(),
 		// -driveStick.getThrottle());
-		Robot.drive.tankDrive(-Robot.oi.leftStick.getY(), -((OI1) Robot.oi.rightStick).getY());
+		Robot.drive.tankDrive(-((OI1) Robot.oi.Gamecontroller).getY(), -((OI1) Robot.oi.Gamecontroller).getY());
 	}
 
 	@Override
 	protected void initialize() {
 		// TODO Auto-generated method stub
 		Drive.driveforwardtwo();
-		this.setTimeout(10);
+
 	}
 
 	@Override
@@ -47,7 +47,7 @@ public class robotdrive extends Command {
 	@Override
 	protected boolean isFinished() {
 		// TODO Auto-generated method stub
-		return this.isTimedOut();
+		return false;
 	}
 
 }

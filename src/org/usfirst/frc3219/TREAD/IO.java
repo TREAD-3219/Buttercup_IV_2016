@@ -5,8 +5,7 @@ import edu.wpi.first.wpilibj.Joystick;
 
 public class IO {
 
-	public OI1 leftStick;
-	public Joystick LeftStick;
 	public Object rightStick;
+	public Object Gamecontroller;
 
 }
