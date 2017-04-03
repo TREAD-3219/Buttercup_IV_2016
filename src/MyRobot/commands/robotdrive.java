@@ -28,13 +28,12 @@ public class robotdrive extends Command {
 		// TODO Auto-generated method stub
 		// Robot.drive.stickDrive(driveStick.getY(), driveStick.getX(),
 		// -driveStick.getThrottle());
-		Robot.drive.tankDrive(-((OI1) Robot.oi.Gamecontroller).getY(), -((OI1) Robot.oi.Gamecontroller).getY());
+		Robot.drive.tankDrive(-((OI1) Robot.oi.Gamecontroller).getY(), -((OI1) Robot.oi.Gamecontroller).getX());
 	}
 
 	@Override
 	protected void initialize() {
 		// TODO Auto-generated method stub
-		Drive.driveforwardtwo();
 
 	}
 
