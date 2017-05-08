@@ -19,7 +19,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
  * This class is the glue that binds the controls on the physical operator
  * interface to the commands and command groups that allow control of the robot.
  */
-public class OI1 {
+public class OI {
 	//// CREATING BUTTONS
 	// One type of button is a joystick button which is any button on a
 	//// joystick.
@@ -42,12 +42,12 @@ public class OI1 {
 
 	public Joystick Gamecontroller;
 
-	public OI1() {
+	public OI() {
 		{
 			// joystick initialization
 			Gamecontroller = new Joystick(1);
 			{
-
+				//TODO add code for the joystick here
 			}
 		}
 	}
