@@ -39,7 +39,7 @@ public class RobotMap {
     	//pnumatics
     	rightCannon = new Solenoid(0);
     	leftCannon = new Solenoid(1);
-    	
+    	//airHorn = new Solenoid(3); // Non-existent
     	
     }
 }
