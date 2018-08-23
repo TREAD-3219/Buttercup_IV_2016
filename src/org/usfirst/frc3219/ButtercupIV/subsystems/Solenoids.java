@@ -31,4 +31,12 @@ public class Solenoids extends Subsystem {
 	public void rightAirCannonOff() {
 		RobotMap.rightCannon.set(false);
 	}
+	
+	public void airHornOn() {
+		RobotMap.airHorn.set(true);
+	}
+	
+	public void airHornOff() {
+		RobotMap.airHorn.set(false);
+	}
 }

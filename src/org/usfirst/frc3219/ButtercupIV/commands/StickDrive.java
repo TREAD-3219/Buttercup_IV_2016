@@ -43,10 +43,10 @@ public class StickDrive extends Command {
 	protected void execute() {
 
 		// Throttle
-		double leftTrigger = Robot.oi.gamepad.getRawAxis(LEFT_TRIGGER)*-1;
+		//double leftTrigger = Robot.oi.gamepad.getRawAxis(LEFT_TRIGGER)*-1;
 		double rightTrigger = Robot.oi.gamepad.getRawAxis(RIGHT_TRIGGER);
-		double throttleRaw = ((leftTrigger + rightTrigger)/2)+0.5;
-		double throttleScaled = (throttleRaw*0.6)+0.4;
+		double throttleRaw = ((/*leftTrigger + */rightTrigger)/2)+0.5; // magic numbers
+		double throttleScaled = (throttleRaw*0.6)+0.4; // more magic numbers
 		
 		// Stick
 		double leftStick = Robot.oi.gamepad.getRawAxis(LEFT_STICK_Y);

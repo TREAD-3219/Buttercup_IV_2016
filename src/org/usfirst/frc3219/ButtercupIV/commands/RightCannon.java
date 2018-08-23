@@ -8,7 +8,9 @@ public class RightCannon extends Command {
 
 	@Override
 	protected void initialize() {
-		Robot.solenoids.rightAirCannonOn(); //TODO access properly
+		if (Robot.oi.gamepad.getRawAxis(2) > 0.8) {
+			Robot.solenoids.rightAirCannonOn();
+		}
 		this.setTimeout(0.3);
 	}
 	
